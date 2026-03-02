@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etName"
+        android:hint="ФИО"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etGroup"
+        android:hint="Номер группы"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etAge"
+        android:hint="Возраст"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etGrade"
+        android:hint="Оценка за практику"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- 🔹 Декларативный переход -->
+    <Button
+        android:text="Перейти (onClick)"
+        android:onClick="onOpenSecondActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- 🔹 Программный переход -->
+    <Button
+        android:id="@+id/btnProgrammatic"
+        android:text="Перейти (Listener)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
